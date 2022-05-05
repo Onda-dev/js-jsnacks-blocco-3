@@ -4,14 +4,16 @@
 const red = document.querySelector(".red")
 const green = document.querySelector(".green")
 
-document.getElementById("red").style.color = "red";
-document.getElementById("green").style.color = "green";
+red.style.color = "red";
+green.style.color = "green";
 
 const numbers = []
 for( let i = 0; i < 20; i++) {
     numbers.push(Math.floor(Math.random() * 100) +1)
 }
 
-console.log(numbers)
 
-while()
+
+if (numbers.length % 2 === 0) {
+    console.log(numbers)
+}
