@@ -12,13 +12,11 @@ const sonArray = []
 
 // Creo 10 numeri casuali tra 1 e 100 e li pusho in arraySon
 // Creo un sonArray in dadArray per il numero di volte indicato nel promtp
-while(sonArray.length < N) {
-    for( let i = 0; i < 10; i++) {
-        sonArray.push(Math.floor(Math.random() * 100) +1)
-    }
-    for(let i = 0; i < N; i++) {
-        dadArray.push(sonArray);
-    }  
+for( let i = 0; i < 10; i++) {
+    sonArray.push(Math.floor(Math.random() * 100) +1)
 }
+for(let i = 0; i < N; i++) {
+    dadArray.push(sonArray);
+}  
 
 console.log(dadArray)
