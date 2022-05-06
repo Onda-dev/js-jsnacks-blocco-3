@@ -16,14 +16,14 @@ console.log(numbers)
 
 const oddNumbers = []
 for (let i = 0; i < numbers.length; i++) {
-    if(i % 2 === 0) {
+    if(numbers[i] % 2 === 0) {
         oddNumbers.push(numbers[i]);
     }
 }
 
 const evenNumbers = []
 for (let i = 0; i < numbers.length; i++) {
-    if(i % 2 === 1) {
+    if(numbers[i] % 2 === 1) {
         evenNumbers.push(numbers[i]);
     }
 }
