@@ -14,22 +14,11 @@ for( let i = 0; i < 20; i++) {
 
 console.log(numbers)
 
-const oddNumbers = []
 for (let i = 0; i < numbers.length; i++) {
     if(numbers[i] % 2 === 0) {
-        oddNumbers.push(numbers[i]);
+        red.innerHTML += numbers[i] + " "
+    }
+    else {
+        green.innerHTML += numbers[i] + " "
     }
 }
-
-const evenNumbers = []
-for (let i = 0; i < numbers.length; i++) {
-    if(numbers[i] % 2 === 1) {
-        evenNumbers.push(numbers[i]);
-    }
-}
-
-document.getElementById("red").innerHTML = oddNumbers
-document.getElementById("green").innerHTML = evenNumbers
-
-console.log(oddNumbers)
-console.log(evenNumbers)
